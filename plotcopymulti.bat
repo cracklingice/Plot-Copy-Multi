@@ -21,9 +21,9 @@ dir !loopvar! | find "bytes free" > %CD%\space%var%.tmp
 set /p out%var%=<space%var%.tmp & set out%var%=!out%var%:~24! & set out%var%=!out%var%:bytes free=! & set out%var%=!out%var%: =! & set out%var%=!out%var%:,=! & del space%var%.tmp
 call :increment !out%var%!
 set destination=!loopvar!
-if not %destination:~-1%==\ set destination=%destination%\
 )
 if not defined plotname goto timer
+if not %destination:~-1%==\ set destination=%destination%\
 if defined increment (if not %increment%==larger set /a var=var+1 & goto loop)
 echo %date% %time:~0,-3% Plot found: starting move
 :start
