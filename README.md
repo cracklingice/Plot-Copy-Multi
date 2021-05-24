@@ -1,3 +1,4 @@
+# Plot-Copy-Multi (windows only)
 Moves Chia plots from the directory the batch file is started in to the configured destinations.  Chia Plot Copy Multi will move to the first specified directory with sufficient free space.
 
 Chia Plot Copy Multi should be considered beta at this time because I do not have a large amount of hardware to test it with.  There is definitely going to be a maximum size for the final directory due to the 32-bit integer limit, but I'm not certain how large of a pool of free space would be required to break it, I believe it would be 21TiB.  It would also break if you somehow managed to have less than 10,000 bytes of free space.  There's also the small potential that the plot could be larger than the available space by 10,000 and that would break it too.  I believe these issues would not be likely to occour, but feel that I should mention the possibility.
