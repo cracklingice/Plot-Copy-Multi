@@ -14,7 +14,7 @@ echo Started multi directory Plot Copy.
 setlocal enabledelayedexpansion
 set var=1
 :loop
-FOR %%G IN (plot*.iso) DO (call :set %%G
+FOR %%G IN (plot*.plot) DO (call :set %%G
 set loopvar=!dir%var%!
 if not defined dir%var% goto error
 dir !loopvar! | find "bytes free" > %CD%\space%var%.tmp
