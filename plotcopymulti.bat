@@ -82,6 +82,7 @@ set var=1
 set plotname=
 set plotsize=
 set increment=
+set timed=
 goto loop
 goto :eof
 :error
